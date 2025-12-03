@@ -257,7 +257,7 @@ Receiving objects: 100% (92/92), 1.80 MiB | 68.15 MiB/s, done.
 Resolving deltas: 100% (25/25), done.
 [root@ip-172-31-11-187 docker_python_flask-project]# ls
 Dockerfile  README.md  app.py  deploy+process_ec2_process  docker  nginx-process  requirements.txt
-
+  ```
 
 
 
