@@ -1,6 +1,6 @@
 # 🌐 Connect to Your AWS EC2 Instance
   ```
-   ,     #_
+     ,     #_
    ~\_  ####_        Amazon Linux 2023
   ~~  \_#####\
   ~~     \###|
@@ -188,75 +188,59 @@ Installed:
   perl-Git-2.50.1-1.amzn2023.0.1.noarch        perl-TermReadKey-2.38-9.amzn2023.0.2.x86_64        perl-lib-0.65-477.amzn2023.0.7.x86_64  
 
                     perl-Error-1:0.17029-5.amzn2023.0.2.noarch        perl-File-Find-1.37-477.amzn2023.0.7.noarch           
-
 Complete!
-[root@ip-172-31-11-187 ~]# git clone https://github.com/chintu-cloud/Docker_Python_Flask-Project.git
-Cloning into 'docker_python_flask-project'...
-remote: Enumerating objects: 91, done.
-remote: Counting objects: 100% (91/91), done.
-remote: Compressing objects: 100% (59/59), done.
-Receiving objects: 100% (91/91), 26.87 KiB | 26.87 MiB/s, done.
-remote: Total 91 (delta 46), reused 56 (delta 26), pack-reused 0 (from 0)
-Resolving deltas: 100% (46/46), done.
-[root@ip-172-31-11-187 ~]# ls
-docker_python_flask-project
-[root@ip-172-31-11-187 ~]# cd docker_python_flask-project
-[root@ip-172-31-11-187 docker_python_flask-project]# ls
-Dockerfile  README.md  app.py  deploy+process_ec2_process  nginx-process  requirements.txt
-[root@ip-172-31-11-187 docker_python_flask-project]# docker build -t simple-flask-app:latest .
-[+] Building 13.9s (9/9) FINISHED                                                                                                   docker:default
- => [internal] load build definition from Dockerfile                                                                                          0.0s
- => => transferring dockerfile: 296B                                                                                                          0.0s
- => [internal] load metadata for docker.io/library/python:3.6                                                                                 0.2s
- => [internal] load .dockerignore                                                                                                             0.0s
- => => transferring context: 2B                                                                                                               0.0s
- => [internal] load build context                                                                                                             0.0s
- => => transferring context: 81.10kB                                                                                                          0.0s
- => [1/4] FROM docker.io/library/python:3.6@sha256:f8652afaf88c25f0d22354d547d892591067aa4026a7fa9a6819df9f300af6fc                           9.0s
- => => resolve docker.io/library/python:3.6@sha256:f8652afaf88c25f0d22354d547d892591067aa4026a7fa9a6819df9f300af6fc                           0.0s
- => => sha256:f8652afaf88c25f0d22354d547d892591067aa4026a7fa9a6819df9f300af6fc 1.86kB / 1.86kB                                                0.0s
- => => sha256:d097a4907a8ec079df5ac31872359c2de510f82214c0448e926393b376d3b60d 2.22kB / 2.22kB                                                0.0s
- => => sha256:0e29546d541cdbd309281d21a73a9d1db78665c1b95b74f32b009e0b77a6e1e3 54.92MB / 54.92MB                                              0.6s
- => => sha256:9b829c73b52b92b97d5c07a54fb0f3e921995a296c714b53a32ae67d19231fcd 5.15MB / 5.15MB                                                0.1s
- => => sha256:cb5b7ae361722f070eca53f35823ed21baa85d61d5d95cd5a95ab53d740cdd56 10.87MB / 10.87MB                                              0.2s
- => => sha256:54260638d07c5e3ad24c6e21fc889abbc8486a27634c0892086ff71f3f44b104 9.27kB / 9.27kB                                                0.0s
- => => sha256:6494e4811622b31c027ccac322ca463937fd805f569a93e6f15c01aade718793 54.57MB / 54.57MB                                              0.7s
- => => sha256:6f9f74896dfa93fe0172f594faba85e0b4e8a0481a0fefd9112efc7e4d3c78f7 196.51MB / 196.51MB                                            2.6s
- => => extracting sha256:0e29546d541cdbd309281d21a73a9d1db78665c1b95b74f32b009e0b77a6e1e3                                                     1.4s
- => => sha256:5e3b1213efc56598e78bd602983945c164de2a37205e06a62dada823124dc743 6.29MB / 6.29MB                                                0.8s
- => => sha256:404f02044bac0432ca522cbb9f254b1c91fcea6806bfeef0be0b243b2f31bab7 235B / 235B                                                    0.8s
- => => sha256:9fddfdc56334f2e6efad7e241bf5e7459c40ed105c5478676f41c1244bd96752 14.21MB / 14.21MB                                              0.9s
- => => sha256:c4f42be2be53b900ebffc040c1df13de538434ccc5f5d954a56848a6169a3a3f 2.21MB / 2.21MB                                                0.9s
- => => extracting sha256:9b829c73b52b92b97d5c07a54fb0f3e921995a296c714b53a32ae67d19231fcd                                                     0.1s
- => => extracting sha256:cb5b7ae361722f070eca53f35823ed21baa85d61d5d95cd5a95ab53d740cdd56                                                     0.1s
- => => extracting sha256:6494e4811622b31c027ccac322ca463937fd805f569a93e6f15c01aade718793                                                     1.3s
- => => extracting sha256:6f9f74896dfa93fe0172f594faba85e0b4e8a0481a0fefd9112efc7e4d3c78f7                                                     3.9s
- => => extracting sha256:5e3b1213efc56598e78bd602983945c164de2a37205e06a62dada823124dc743                                                     0.2s
- => => extracting sha256:9fddfdc56334f2e6efad7e241bf5e7459c40ed105c5478676f41c1244bd96752                                                     0.3s
- => => extracting sha256:404f02044bac0432ca522cbb9f254b1c91fcea6806bfeef0be0b243b2f31bab7                                                     0.0s
- => => extracting sha256:c4f42be2be53b900ebffc040c1df13de538434ccc5f5d954a56848a6169a3a3f                                                     0.1s
- => [2/4] COPY . /app                                                                                                                         2.1s
- => [3/4] WORKDIR /app                                                                                                                        0.0s
- => [4/4] RUN pip install -r requirements.txt                                                                                                 2.4s
- => exporting to image                                                                                                                        0.1s 
- => => exporting layers                                                                                                                       0.1s 
- => => writing image sha256:5ac94cb2e4c051a6ad1a6b5c99a0a39375cf8ff2f8641f8bf8938ddd843b20fc                                                  0.0s 
- => => naming to docker.io/library/simple-flask-app:latest 
-[root@ip-172-31-11-187 docker_python_flask-project]# docker run -d -p 5000:5000 simple-flask-app                                                                                                                                                          
-11fb0e9e65a7709fa89c02e728741365166b9b564da7dd0ca2083e0f91e831f4                                                                                                                                                                                          
-[root@ip-172-31-11-187 docker_python_flask-project]# docker ps
-CONTAINER ID   IMAGE              COMMAND           CREATED          STATUS          PORTS                                       NAMES
-11fb0e9e65a7   simple-flask-app   "python app.py"   21 seconds ago   Up 21 seconds   0.0.0.0:5000->5000/tcp, :::5000->5000/tcp   adoring_mcclintock
-[root@ip-172-31-11-187 docker_python_flask-project]# git clone https://github.com/CloudTechDevOps/swiggy-nodejs-devops-project.git
+[root@ip-172-31-11-187 ~]# git clone https://github.com/chintu-cloud/swiggy-nodejs-devops-project.git
 Cloning into 'swiggy-nodejs-devops-project'...
 remote: Enumerating objects: 92, done.
 remote: Counting objects: 100% (32/32), done.
 remote: Compressing objects: 100% (22/22), done.
 remote: Total 92 (delta 21), reused 7 (delta 7), pack-reused 60 (from 2)
-Receiving objects: 100% (92/92), 1.80 MiB | 68.15 MiB/s, done.
+Receiving objects: 100% (92/92), 1.80 MiB | 76.67 MiB/s, done.
 Resolving deltas: 100% (25/25), done.
-[root@ip-172-31-11-187 docker_python_flask-project]# ls
-Dockerfile  README.md  app.py  deploy+process_ec2_process  docker  nginx-process  requirements.txt
+[root@ip-172-31-11-187 ~]# ls
+docker_python_flask-project  swiggy-nodejs-devops-project
+[root@ip-172-31-11-187 ~]# cd ^C
+[root@ip-172-31-11-187 ~]# cd swiggy-nodejs-devops-project
+[root@ip-172-31-11-187 swiggy-nodejs-devops-project]# ls
+Dockerfile  Kubernetes  Photos  README.md  package-lock.json  package.json  public  src
+[root@ip-172-31-11-187 swiggy-nodejs-devops-project]# vi dockerfile
+[root@ip-172-31-11-187 swiggy-nodejs-devops-project]# docker build -t swiggy-nodejs-app .
+[+] Building 26.0s (11/11) FINISHED                                                                                                      docker:default
+ => [internal] load build definition from Dockerfile                                                                                               0.0s
+ => => transferring dockerfile: 1.16kB                                                                                                             0.0s
+ => [internal] load metadata for docker.io/library/node:16-slim                                                                                    0.2s
+ => [internal] load .dockerignore                                                                                                                  0.0s
+ => => transferring context: 2B                                                                                                                    0.0s
+ => [1/6] FROM docker.io/library/node:16-slim@sha256:3ebf2875c188d22939c6ab080cfb1a4a6248cc86bae600ea8e2326aa03acdb8f                              2.3s
+ => => resolve docker.io/library/node:16-slim@sha256:3ebf2875c188d22939c6ab080cfb1a4a6248cc86bae600ea8e2326aa03acdb8f                              0.0s
+ => => sha256:ecdd21ad91a4e69294555b3e56a71a7382a58a9c54b02d9038bcd3821ba3d072 4.18kB / 4.18kB                                                     0.1s
+ => => sha256:72f5a0bbd6d5f85fce35070bd624cf69c2ceb91424afe8a5ed2a02442cdd711c 35.25MB / 35.25MB                                                   0.6s
+ => => sha256:6d65359ecb29ff24f2322d5ad308f0a8a95980706ae2e76315a267474402aa3a 2.73MB / 2.73MB                                                     0.2s
+ => => sha256:3ebf2875c188d22939c6ab080cfb1a4a6248cc86bae600ea8e2326aa03acdb8f 776B / 776B                                                         0.0s
+ => => sha256:549225012a87d35a483af278699980776fc0bca0990a60ad3fd9a303904de32f 1.37kB / 1.37kB                                                     0.0s
+ => => sha256:eb8b8b8a361056a1107428997a0c13a18c013ad612f24e54cb6990e60bfed3ec 7.02kB / 7.02kB                                                     0.0s
+ => => sha256:91f01557fe0da558070d4f24631c94e91a80877a24621b52b8b13009b62d8d96 27.19MB / 27.19MB                                                   0.3s
+ => => sha256:a9db6797916ed95aa70dba9828c955247db171807e704ae7b1fb37b7c7e4b0e6 450B / 450B                                                         0.3s
+ => => extracting sha256:91f01557fe0da558070d4f24631c94e91a80877a24621b52b8b13009b62d8d96                                                          0.9s
+ => => extracting sha256:ecdd21ad91a4e69294555b3e56a71a7382a58a9c54b02d9038bcd3821ba3d072                                                          0.0s
+ => => extracting sha256:72f5a0bbd6d5f85fce35070bd624cf69c2ceb91424afe8a5ed2a02442cdd711c                                                          0.8s
+ => => extracting sha256:6d65359ecb29ff24f2322d5ad308f0a8a95980706ae2e76315a267474402aa3a                                                          0.1s
+ => => extracting sha256:a9db6797916ed95aa70dba9828c955247db171807e704ae7b1fb37b7c7e4b0e6                                                          0.0s
+ => [internal] load build context                                                                                                                  0.1s
+ => => transferring context: 4.59MB                                                                                                                0.0s
+ => [2/6] WORKDIR /app                                                                                                                             0.5s
+ => [3/6] RUN mkdir -p /app /.npm /tmp/.npm     && chgrp -R 0 /app /.npm /tmp     && chmod -R g+rwX /app /.npm /tmp                                0.2s
+ => [4/6] COPY package*.json ./                                                                                                                    0.1s
+ => [5/6] RUN npm install --legacy-peer-deps                                                                                                      20.4s
+ => [6/6] COPY . .                                                                                                                                 0.0s 
+ => exporting to image                                                                                                                             2.1s 
+ => => exporting layers                                                                                                                            2.1s 
+ => => writing image sha256:3784f9a2cf74b04915cf5354e75cd9a2529b6cdf60c91cf2381c0c79ecfaa841                                                       0.0s 
+ => => naming to docker.io/library/swiggy-nodejs-app                                                                                               0.0s 
+[root@ip-172-31-11-187 swiggy-nodejs-devops-project]# docker run -d -p 3000:3000 swiggy-nodejs-app                                                                                                                                                        
+d7fb19de4101700db4036103acb17bdbaa480b0a3029dde84e3159b73d588669
+[root@ip-172-31-11-187 swiggy-nodejs-devops-project]# vi dockerfile
+[root@ip-172-31-11-187 swiggy-nodejs-devops-project]#
   ```
 # copy instance pubic ip with port no.
     <public IP>:port number
