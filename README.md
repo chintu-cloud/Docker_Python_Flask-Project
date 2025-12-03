@@ -258,7 +258,13 @@ Resolving deltas: 100% (25/25), done.
 [root@ip-172-31-11-187 docker_python_flask-project]# ls
 Dockerfile  README.md  app.py  deploy+process_ec2_process  docker  nginx-process  requirements.txt
   ```
+copy instance pubic ip with port no.
+    <public IP>:port number
+     100.126.28.212:5000     
 
+
+  --> then enter
+<img width="1912" height="496" alt="Screenshot 2025-12-03 164533" src="https://github.com/user-attachments/assets/0c549ac5-b9b1-455f-a64e-12fa25c5d3c6" />
 
 
 # 🚀 Docker Python Flask Project
