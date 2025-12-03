@@ -270,7 +270,7 @@ This repository contains a simple **Flask application** packaged with **Docker**
 
 Here’s a clean **file structure layout** for your `docker_python_flask-project` repo. I’ve styled it so it looks polished and easy to scan 👇  
 
-```markdown
+
 # 📂 Project File Structure
 
 ```
