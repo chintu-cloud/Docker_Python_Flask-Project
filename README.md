@@ -267,6 +267,37 @@ Dockerfile  README.md  app.py  deploy+process_ec2_process  docker  nginx-process
 
 This repository contains a simple **Flask application** packaged with **Docker** for easy deployment.
 
+
+Here’s a clean **file structure layout** for your `docker_python_flask-project` repo. I’ve styled it so it looks polished and easy to scan 👇  
+
+```markdown
+# 📂 Project File Structure
+
+```
+docker_python_flask-project/
+├── app.py                # Main Flask application entrypoint
+├── requirements.txt      # Python dependencies
+├── Dockerfile            # Docker build instructions
+├── docker-compose.yml    # (Optional) Compose file for multi-service setup
+├── README.md             # Documentation and deployment guide
+└── __pycache__/          # Auto-generated Python cache files (ignored in .gitignore)
+```
+
+---
+
+## 📝 Notes
+- **app.py** → Contains your Flask routes and logic.  
+- **requirements.txt** → Lists all Python packages needed (`Flask`, `gunicorn`, etc.).  
+- **Dockerfile** → Defines how to build the container image.  
+- **docker-compose.yml** → Useful if you add DB, cache, or multiple services.  
+- **README.md** → Deployment instructions (already prepared).  
+- **__pycache__/** → Generated automatically by Python, not needed in version control.  
+
+
+
+
+
+
 ---
 
 ## ✅ What’s in the repo
