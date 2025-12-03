@@ -1,5 +1,5 @@
 # 🌐 Connect to Your AWS EC2 Instance
-
+  ```
    ,     #_
    ~\_  ####_        Amazon Linux 2023
   ~~  \_#####\
