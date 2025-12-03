@@ -261,8 +261,6 @@ Dockerfile  README.md  app.py  deploy+process_ec2_process  docker  nginx-process
 
 
 
-
-
 # 🚀 Docker Python Flask Project
 
 This repository contains a simple **Flask application** packaged with **Docker** for easy deployment.
